@@ -1,8 +1,17 @@
+import Hero from "@/components/molecules/Hero";
+
 function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div>
+            <Hero 
+                title="Home"
+                image={{
+                    url: "/images/blur-cafe-chairs-min.jpg",
+                    alt: "Alrt"
+                }}
+             />
             Home
-        </main>
+        </div>
     )
 }
 
