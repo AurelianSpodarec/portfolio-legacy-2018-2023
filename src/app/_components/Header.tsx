@@ -25,8 +25,11 @@ function Header() {
 
             <nav className="hidden lg:block space-x-6 text-sm text-white">
                 <Link href="/">Home</Link>
-                <Link href="/">About</Link>
-                <Link href="/">Contact</Link>
+                <Link href="/services">Services</Link>
+                <Link href="/process">Process</Link>
+                <Link href="/about">About</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/contact">Get In Touch</Link>
             </nav>
 
             <div className="lg:hidden">
