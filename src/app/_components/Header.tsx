@@ -1,4 +1,5 @@
 'use client';
+import Container from "@/components/_layout/Container";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -17,6 +18,7 @@ function Header() {
 
     return (
         <header className="fixed top-0 right-0 left-0 w-full z-30">
+        <Container>
         <div className="flex justify-between items-center py-2">
 
             <Link href="/">
@@ -62,6 +64,7 @@ function Header() {
             </div>
 
         </div>
+        </Container>
         </header>
     )
 }

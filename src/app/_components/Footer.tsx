@@ -1,9 +1,10 @@
+import Container from "@/components/_layout/Container";
 import Link from "next/link";
 
 function Footer() {
     return (
         <footer className="bg-[#262626] py-6">
-        
+        <Container>
             
             <div className="flex justify-between items-center">
                 <Link href="/" className="text-white text-3xl font-bold">Aurelian S</Link>
@@ -34,6 +35,7 @@ function Footer() {
                 </nav>
             </div>
 
+        </Container>
         </footer>
     )
 }
