@@ -1,21 +1,21 @@
 import Hero from "@/components/molecules/Hero";
 import Head from "next/head";
 
-function Contact() {
+function FAQ() {
     return (
         <>
             <Head>
-                <title>Contact - Aurelian Spodarec</title>
+                <title>FAQ - Aurelian Spodarec</title>
                 <meta
                     name="description"
                     content="I’m Aurelian Spodarec. I live in Manchester, United Kingdom where I develop design and develop webapps."
                 />
             </Head>
             <Hero 
-                title="Get In Touch"
-                description="We'll get back to you as soon as humanly possible!"
+                title="Frequently Asked Questions"
+                description="Answers to the common questions I recieve from prospective clients"
                 image={{
-                    url: "/images/adult-book-business-min.jpg",
+                    url: "/images/adult-agreement-outside-super-min.jpg",
                     alt: "Desk with an Apple Computer with a coffee "
                 }}
             />
@@ -23,4 +23,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default FAQ;
