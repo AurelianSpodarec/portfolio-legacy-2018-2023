@@ -7,7 +7,7 @@ function CTABlock({ title, image, link }:CTABlockProps) {
     return (
         <div className="relative overflow-hidden h-full group">
 
-            <div className="absolute top-0 right-0 bottom-0 left-0 z-10 bg-black/60 h-full w-full"></div>
+            <div className="absolute top-0 right-0 bottom-0 left-0 z-10 bg-[#333]/75 h-full w-full"></div>
             <Image src={image.url} alt={image.alt} fill className="w-full h-full object-cover transition duration-100 ease-linear group-hover:scale-105" />
 
             <div className="absolute z-20 h-full w-full px-8">
