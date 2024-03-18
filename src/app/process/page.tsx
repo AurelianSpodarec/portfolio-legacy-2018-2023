@@ -26,11 +26,12 @@ const processSteps = [
 ]
 
 function ProcessSection({ step, item, inverted}:any) {
+    console.log(inverted)
     return (
         <div className="relative h-screen w-full flex items-center align-middle">
         <div>
 
-            <div className="absolute top-0 right-0 bottom-0 left-0 bg-white/40"></div>
+            <div className={`absolute top-0 right-0 bottom-0 left-0 ${inverted ? "bg-white/70" : "bg-black/70"}`}></div>
             <img src={`/images/${item.image}`} className="absolute inset-0 -z-10 h-full w-full object-cover" />
 
             <Container>
@@ -72,7 +73,8 @@ function Process() {
                 {processSteps.map(((item, index) => {
                     const step = index + 1
                     const stepNumber = step.toString().padStart(2, '0')
-                    return <ProcessSection key={index} item={item} step={stepNumber} />
+                    const inverted = index % 2 === 0;
+                    return <ProcessSection key={index} item={item} step={stepNumber} inverted={inverted} />
                 }))}
             </section>
         </>
