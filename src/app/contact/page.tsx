@@ -1,5 +1,6 @@
 import Hero from "@/components/molecules/Hero";
 import Head from "next/head";
+import BoxContact from "../_components/BoxContact";
 
 function Contact() {
     return (
@@ -19,6 +20,8 @@ function Contact() {
                     alt: "Desk with an Apple Computer with a coffee "
                 }}
             />
+
+            <BoxContact />
         </>
     )
 }

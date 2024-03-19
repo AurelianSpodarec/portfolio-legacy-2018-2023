@@ -11,12 +11,12 @@ function BoxContact() {
 
       <div>
         <div>
-          <Input />
-          <Input />
-          <Input />
+          <Input name="name" type="text" placeholder="Name" />
+          <Input name="email" type="email" placeholder="Email" />
+          <Input name="telephone" type="tel"placeholder="Tel No." />
         </div>
         <div>
-          textarea
+          <textarea/>
         </div>
       </div>
 
