@@ -26,13 +26,13 @@ function Header() {
           </Link>
 
           <nav className="hidden lg:block space-x-7 text-sm text-white font-montserrat">
-            <Link href="/">Home</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/process">Process</Link>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="aurelianspodarec.co.uk/blog">Blog</Link>
-            <Link href="/contact">Get In Touch</Link>
+            <Link href="/" className="text-sm rounded-xl border-[2px] px-3 py-3">Home</Link>
+            <Link href="/services" className="text-sm rounded-xl border-[2px] px-3 py-3">Services</Link>
+            <Link href="/process" className="text-sm rounded-xl border-[2px] px-3 py-3">Process</Link>
+            <Link href="/about" className="text-sm rounded-xl border-[2px] px-3 py-3">About</Link>
+            <Link href="/projects" className="text-sm rounded-xl border-[2px] px-3 py-3">Projects</Link>
+            <Link href="aurelianspodarec.co.uk/blog" className="text-sm rounded-xl border-[2px] px-3 py-3">Blog</Link>
+            <Link href="/contact" className="text-[#f2a538] border-[#f2a538] hover:text-[#e08300] hover:border-[#e08300] border-[2px] rounded-3xl font-bold px-4 py-3">Get In Touch</Link>
           </nav>
 
           <div className="lg:hidden">

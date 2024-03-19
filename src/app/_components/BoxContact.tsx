@@ -1,5 +1,5 @@
 import Button from "@/components/atoms/Button";
-import Input from "@/components/atoms/Input";
+import { Input } from "@/components/atoms/Input";
 
 function BoxContact() {
   return (
