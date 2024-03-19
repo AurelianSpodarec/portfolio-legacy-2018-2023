@@ -27,11 +27,11 @@ function Footer() {
                     <p className="text-white text-sm">&copy; Aurelian Spodarec {new Date().getFullYear()}. All rights reserved</p>
 
                     <nav className="text-white text-sm space-x-7">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">FQA</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Github</a>
-                        <a href="#">Contact</a>
+                        <Link href="https://www.linkedin.com/in/aurelianspodarec/">LinkedIn</Link>
+                        <Link href="/faq">FAQ</Link>
+                        <Link href="https://aurelianspodarec.co.uk/blog">Blog</Link>
+                        <Link href="https://github.com/AurelianSpodarec">Github</Link>
+                        <Link href="/contact">Contact</Link>
                     </nav>
                 </div>
 

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import BoxContact from "../_components/BoxContact";
 import Container from "@/components/_layout/Container";
+import CTAActionChoice from "@/components/section/CTAActionChoice";
 
 function About() {
   return (
@@ -58,7 +59,10 @@ function About() {
 
         </Container>
       </section>
+
       <BoxContact />
+
+      <CTAActionChoice />
     </>
   )
 }
