@@ -6,7 +6,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        "lato": "var(--font-lato)",
+        "roboto-slab": "var(--font-roboto-slab)",
+        "montserrat": "var(--font-montserrat)"
+      }
+    }
   },
   plugins: [],
 }

@@ -15,14 +15,14 @@ function About() {
       </Head>
       <Hero
         title="About"
-        description="Here you can get to know me and how I could be of service"
+        description="Here you can learn about me, and how I can help you"
         image={{
           url: "/images/apple-device-blur-blurry-min.jpg",
           alt: "Desk with an Apple Computer with a coffee "
         }}
       />
       <section>
-        <Image />
+        <Image src="/images/aurelian-photo.jpg" width="500" height="500" alt="Aurelian sitting in front of a computer" />
 
         <div>
           <div>

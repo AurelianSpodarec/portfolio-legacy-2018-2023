@@ -1,11 +1,9 @@
-import { Inter } from 'next/font/google'
-
 import Header from './_components/Header'
 import Footer from './_components/Footer'
 
 import './../styles/styles.scss'
 
-import { Montserrat, Lato, Roboto } from 'next/font/google'
+import { Montserrat, Lato, Roboto_Slab } from 'next/font/google'
 
 const montserrat = Montserrat({
   weight: ['400', '700'],
@@ -22,12 +20,12 @@ const lato = Lato({
   variable: "--font-lato"
 })
 
-const roboto = Roboto({
+const roboto = Roboto_Slab({
   weight: ['300', '400'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
-  variable: "--font-roboto"
+  variable: "--font-roboto-slab"
 })
 
 export const metadata = {
@@ -42,8 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${lato.className} ${roboto.className}`}>
-
+      <body className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`}>
         <Header />
         {children}
         <Footer />
