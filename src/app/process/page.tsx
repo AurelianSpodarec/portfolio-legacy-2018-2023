@@ -1,6 +1,8 @@
 import Container from "@/components/_layout/Container";
 import Hero from "@/components/molecules/Hero";
+import CTAActionChoice from "@/components/section/CTAActionChoice";
 import Head from "next/head";
+import BoxContact from "../_components/BoxContact";
 
 const processSteps = [
     {
@@ -77,6 +79,15 @@ function Process() {
                     return <ProcessSection key={index} item={item} step={stepNumber} inverted={inverted} />
                 }))}
             </section>
+
+            <section>
+                <h3>The big question is...</h3>
+                <h3>Are you ready to roll with me?</h3>
+            </section>
+
+            <BoxContact />
+
+            <CTAActionChoice />
         </>
     )
 }

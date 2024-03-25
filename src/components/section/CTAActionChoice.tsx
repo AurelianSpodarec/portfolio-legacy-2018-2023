@@ -15,6 +15,7 @@ function CTAActionChoice() {
         <BoxAction
           title="Tell me about your project"
           description="If you're interested in hiring me for your next awesome project, don't hesitate to tell me about it, and let's get started!"
+          inverted
           button={{
             text: "Share the details",
             link: "/contact"
