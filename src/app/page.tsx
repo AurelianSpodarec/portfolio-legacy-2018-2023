@@ -1,15 +1,20 @@
+import Image from "next/image";
+
 import Container from "@/components/_layout/Container";
 import Section from "@/components/_layout/Section";
+
 import CTABlock from "@/components/molecules/CTABlock";
 import Hero from "@/components/molecules/Hero";
-import Image from "next/image";
+import MainHero from "@/components/molecules/MainHero";
+
 import BoxContact from "./_components/BoxContact";
 
 function Home() {
   return (
     <>
-      <Hero
-        title="Home"
+      <MainHero
+        title="Brochure Websites"
+        description="Make your website best salesperson"
         image={{
           url: "/images/blur-cafe-chairs-min.jpg",
           alt: "Alrt"
@@ -60,7 +65,7 @@ function Home() {
         </div>
       </Section>
 
-      <section className="bg-[#f5f5f5] py-12">
+      <section>
         <Container>
 
           <div className="grid grid-cols-2">
