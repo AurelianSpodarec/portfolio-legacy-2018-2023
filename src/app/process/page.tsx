@@ -67,7 +67,8 @@ function Process() {
                     alt: "Collaboration image "
                 }}
             />
-            <section>
+
+            <section className="bg-red-500 py-8">
                 <p>I work in stages to promote agility, communication, and collaboration. It's a step-by-step guide on howe we'll work, how I can help you, so the best result is achieved.</p>
             </section>
 
