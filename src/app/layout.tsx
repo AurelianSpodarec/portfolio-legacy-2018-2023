@@ -4,6 +4,7 @@ import Footer from './_components/Footer'
 import './../styles/styles.scss'
 
 import { Montserrat, Lato, Roboto_Slab } from 'next/font/google'
+import { Providers } from './providers'
 
 const montserrat = Montserrat({
   weight: ['400', '700'],
@@ -41,9 +42,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
