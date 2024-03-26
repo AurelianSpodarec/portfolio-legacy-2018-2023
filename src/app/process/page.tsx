@@ -27,24 +27,24 @@ const processSteps = [
     }
 ]
 
-function ProcessSection({ step, item, inverted}:any) {
+function ProcessSection({ step, item, inverted }: any) {
     console.log(inverted)
     return (
         <div className="relative h-screen w-full flex items-center align-middle">
-        <div>
+            <div>
 
-            <div className={`absolute top-0 right-0 bottom-0 left-0 ${inverted ? "bg-white/70" : "bg-black/70"}`}></div>
-            <img src={`/images/${item.image}`} className="absolute inset-0 -z-10 h-full w-full object-cover" />
+                <div className={`absolute top-0 right-0 bottom-0 left-0 ${inverted ? "bg-white/70" : "bg-black/70"}`}></div>
+                <img src={`/images/${item.image}`} className="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-            <Container>
-                <div className="relative z-10">
-                    <span className="text-7xl font-bold ">{step}</span>
-                    <h2 className="text-yellow-500 text-5xl font-bold">{item.name}</h2>
-                    <p>{item.description}</p>
-                </div>
-            </Container>
+                <Container>
+                    <div className="relative z-10">
+                        <span className="text-7xl font-bold ">{step}</span>
+                        <h2 className="text-yellow-500 text-5xl font-bold">{item.name}</h2>
+                        <p>{item.description}</p>
+                    </div>
+                </Container>
 
-        </div>
+            </div>
         </div>
     )
 }
@@ -59,7 +59,8 @@ function Process() {
                     content="I’m Aurelian Spodarec. I live in Manchester, United Kingdom where I develop design and develop webapps."
                 />
             </Head>
-            <Hero 
+
+            <Hero
                 title="Process"
                 description="Having a solid process helps keeping the progress of the app"
                 image={{
@@ -68,8 +69,10 @@ function Process() {
                 }}
             />
 
-            <section className="bg-red-500 py-8">
-                <p>I work in stages to promote agility, communication, and collaboration. It's a step-by-step guide on howe we'll work, how I can help you, so the best result is achieved.</p>
+            <section className="bg-white py-28 text-2xl">
+                <div className="max-w-4xl mx-auto">
+                    <p>I work in stages to promote agility, communication, and collaboration. It's a step-by-step guide on howe we'll work, how I can help you, so the best result is achieved.</p>
+                </div>
             </section>
 
             <section>
@@ -81,9 +84,11 @@ function Process() {
                 }))}
             </section>
 
-            <section>
-                <h3>The big question is...</h3>
-                <h3>Are you ready to roll with me?</h3>
+            <section className="bg-[#f2a538] text-center py-32">
+                <h3 className="text-5xl">
+                    <span className="block">The big question is...</span>
+                    <span className="block">Are you ready to roll with me?</span>
+                </h3>
             </section>
 
             <BoxContact />
