@@ -4,6 +4,7 @@ import Image from "next/image";
 import BoxContact from "../_components/BoxContact";
 import Container from "@/components/_layout/Container";
 import CTAActionChoice from "@/components/section/CTAActionChoice";
+import Section from "@/components/_layout/Section";
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
           content="I’m Aurelian Spodarec. I live in Manchester, United Kingdom where I develop design and develop webapps."
         />
       </Head>
-      
+
       <Hero
         title="About"
         description="Here you can learn about me, and how I can help you"
@@ -25,7 +26,7 @@ function About() {
         }}
       />
 
-      <section>
+      <Section>
         <Container>
 
           <div className="grid grid-cols-2">
@@ -58,7 +59,7 @@ function About() {
           </div>
 
         </Container>
-      </section>
+      </Section>
 
       <BoxContact />
 

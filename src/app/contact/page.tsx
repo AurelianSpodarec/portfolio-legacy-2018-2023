@@ -1,6 +1,7 @@
 import Hero from "@/components/molecules/Hero";
 import Head from "next/head";
 import BoxContact from "../_components/BoxContact";
+import Section from "@/components/_layout/Section";
 
 function Contact() {
     return (
@@ -12,7 +13,7 @@ function Contact() {
                     content="I’m Aurelian Spodarec. I live in Manchester, United Kingdom where I develop design and develop webapps."
                 />
             </Head>
-            <Hero 
+            <Hero
                 title="Get In Touch"
                 description="We'll get back to you as soon as humanly possible!"
                 image={{
@@ -20,8 +21,9 @@ function Contact() {
                     alt: "Desk with an Apple Computer with a coffee "
                 }}
             />
-
-            <BoxContact />
+            <Section size="clean">
+                <BoxContact />
+            </Section>
         </>
     )
 }

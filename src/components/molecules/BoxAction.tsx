@@ -3,7 +3,7 @@ import Link from "next/link";
 interface IBoxAction {
   title: string;
   description: string;
-  inverted: boolean;
+  inverted?: boolean;
   button: {
     text: string;
     link: string;

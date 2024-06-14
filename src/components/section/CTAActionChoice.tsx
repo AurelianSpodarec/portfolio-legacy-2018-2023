@@ -1,8 +1,9 @@
+import Section from "../_layout/Section";
 import BoxAction from "../molecules/BoxAction";
 
 function CTAActionChoice() {
   return (
-    <section>
+    <Section size="clean">
       <div className="grid grid-cols-2">
         <BoxAction
           title="How I work, the process"
@@ -22,7 +23,7 @@ function CTAActionChoice() {
           }}
         />
       </div>
-    </section>
+    </Section>
   )
 }
 
