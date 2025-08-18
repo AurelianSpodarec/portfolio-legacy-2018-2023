@@ -3,10 +3,12 @@ import HeaderMobile from "./Mobile";
 
 function WebHeader() {
   return (
-    <header className="bg-[#262626] text-white">
+    <>
+    {/* <header className="z-10 relative bg-[#262626] text-white"> */}
       <HeaderDesktop />
       <HeaderMobile />
-    </header>
+    {/* </header> */}
+    </>
   );
 }
 

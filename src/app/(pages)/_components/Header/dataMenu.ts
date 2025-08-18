@@ -15,6 +15,10 @@ const dataMenu: IMenuItem[] = [
     link: WebsiteRoutes.ABOUT
   },
   {
+    name: "Process",
+    link: WebsiteRoutes.PROCESS
+  },
+  {
     name: "Projects",
     link: WebsiteRoutes.WORK
   },
