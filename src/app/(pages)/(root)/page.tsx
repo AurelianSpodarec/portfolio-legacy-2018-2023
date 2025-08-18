@@ -1,6 +1,6 @@
 function SectionHero() {
   return (
-    <section className="relative h-screen bg-cover" style={{ backgroundImage: `url('/images/blur-cafe-chairs-min.jpg')` }}>
+    <section className="relative h-screen bg-cover" style={{ backgroundImage: `url('/images/blur-cafe-chairs.jpg')` }}>
       <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-[#0e0f10b0]/70"></div>
 
       <div className="flex items-center justify-center h-full w-full">
