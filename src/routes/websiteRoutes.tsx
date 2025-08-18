@@ -3,5 +3,6 @@ export enum WebsiteRoutes {
   ABOUT = "/about",
   SERVICES = "/services",
   PROCESS = "/process",
+  WORK = "/projects",
   CONTACT = "/contact"
 }
