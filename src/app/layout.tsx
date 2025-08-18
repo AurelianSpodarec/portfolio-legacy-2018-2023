@@ -31,7 +31,9 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     <html lang="en">
       <body className={`antialiased scrollbar ${montserrat.variable} ${georgia.variable}`}>
         <WebHeader />
-        {children}
+        <main>
+          {children}
+        </main>
         <WebFooter />
       </body>
     </html>
