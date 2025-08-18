@@ -1,7 +1,13 @@
+import Hero from "@/components/Hero";
+
 function PageAbout() {
   return (
     <div>
-      PageAbout
+      <Hero 
+        title="About"
+        desc="Here you can learn about me, and how I can help you"
+        bgImage="/images/apple-device-blur-blurry-min.jpg"
+      />
     </div>
   );
 }
