@@ -1,7 +1,13 @@
+import Hero from "@/components/Hero";
+
 function PageContact() {
   return (
     <div>
-      PageContact
+      <Hero 
+        title="Get In Touch"
+        desc="Expect me get back to you in touch, in less than a day"
+        bgImage="/images/adult-book-business-min.jpg"
+      />
     </div>
   );
 }
