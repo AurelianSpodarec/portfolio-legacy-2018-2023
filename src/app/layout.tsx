@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`antialiased scrollbar`}>
         <WebHeader />
         {children}
         <WebFooter />
