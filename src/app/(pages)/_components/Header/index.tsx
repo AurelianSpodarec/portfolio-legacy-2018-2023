@@ -3,7 +3,7 @@ import HeaderMobile from "./Mobile";
 
 function WebHeader() {
   return (
-    <header>
+    <header className="bg-[#262626] text-white">
       <HeaderDesktop />
       <HeaderMobile />
     </header>
