@@ -1,28 +1,10 @@
-import dataMenu, { IMenuItem } from "../dataMenu";
-
-import Link from "next/link";
-// Menu link item
-function MenuLink({ name, link, onClick }: IMenuItem & { onClick: () => void }) {
-  return (
-    <li>
-      <Link
-        href={link}
-        onClick={onClick}
-        className="block px-4 py-2 hover:bg-muted transition-colors"
-      >
-        {name}
-      </Link>
-    </li>
-  );
-}
+import dataMenu from "../../dataMenu";
+import MenuLink from "./MenuLink";
 
 function Drawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
-    <aside
-      className={`fixed top-0 right-0 w-4/5 h-full bg-[#2d2d3b] overflow-y-auto z-50 flex flex-col transform transition-transform duration-200 ${
-        open ? "translate-x-0" : "translate-x-full"
-      }`}
-    >
+    <aside className={`fixed top-0 right-0 w-4/5 h-full bg-[#2d2d3b] overflow-y-auto z-50 flex flex-col transform transition-transform duration-200 ${open ? "translate-x-0" : "translate-x-full"}`}>
+
       <header className="flex justify-end p-4">
         <button
           className="px-3 py-1 rounded-md bg-muted text-muted-foreground"
@@ -33,11 +15,11 @@ function Drawer({ open, onClose }: { open: boolean; onClose: () => void }) {
       </header>
 
       <nav className="p-4 flex-1">
-        <ul className="space-y-2">
+        <div className="space-y-2">
           {dataMenu.map((item) => (
             <MenuLink key={item.link} {...item} onClick={onClose} />
           ))}
-        </ul>
+        </div>
       </nav>
 
       <footer className="p-4 text-sm text-muted-foreground border-t border-muted/20 space-y-2">
@@ -49,16 +31,19 @@ function Drawer({ open, onClose }: { open: boolean; onClose: () => void }) {
             07751022563
           </a>
         </address>
+
         <ul className="space-y-1">
           <li>Developer,</li>
           <li>Blogger,</li>
           <li>Teacher,</li>
           <li>Speaker</li>
         </ul>
+
         <small className="block text-xs">
-          &copy; Aurelian Spodarec 2018–2022 (archived design, copyright continues)
+          &copy; Aurelian Spodarec 2018–2023 (archived design, copyright continues)
         </small>
       </footer>
+
     </aside>
   );
 }

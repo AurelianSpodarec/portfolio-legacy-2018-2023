@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { WebsiteRoutes } from "@/routes";
-import dataMenu, { IMenuItem } from "./dataMenu";
 
+import { WebsiteRoutes } from "@/routes";
+import dataMenu, { IMenuItem } from "../dataMenu";
 
 function MenuItem({ name, link }: IMenuItem) {
   return (

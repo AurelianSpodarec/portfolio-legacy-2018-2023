@@ -1,5 +1,5 @@
-import HeaderDesktop from "./HeaderDesktop";
-import HeaderMobile from "./Mobile/HeaderMobile";
+import HeaderDesktop from "./Desktop";
+import HeaderMobile from "./Mobile";
 
 function WebHeader() {
   return (

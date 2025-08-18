@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 import { WebsiteRoutes } from "@/routes";
-import Drawer from "./Drawer";
+import Drawer from "./_components/Drawer";
 
 function Overlay({ open, onClick }: { open: boolean; onClick: () => void }) {
   return (
