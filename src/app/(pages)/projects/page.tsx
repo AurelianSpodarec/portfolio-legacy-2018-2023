@@ -6,7 +6,7 @@ function PageProjects() {
       <Hero
         title="Projects"
         desc="Some of my work that I have been working in the past."
-        bgImage="/images/adult-business-chair-min.jpg"
+        bgImage="/images/adult-business-chair.jpg"
       />
     </div>
   );

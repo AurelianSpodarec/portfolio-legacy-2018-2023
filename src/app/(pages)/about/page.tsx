@@ -6,7 +6,7 @@ function PageAbout() {
       <Hero 
         title="About"
         desc="Here you can learn about me, and how I can help you"
-        bgImage="/images/apple-device-blur-blurry-min.jpg"
+        bgImage="/images/apple-device-blur-blurry.jpg"
       />
     </div>
   );
