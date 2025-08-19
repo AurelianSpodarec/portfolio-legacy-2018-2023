@@ -4,25 +4,19 @@ import { useState } from "react";
 import Link from "next/link";
 
 import { WebsiteRoutes } from "@/routes";
+
 import Drawer from "./_components/Drawer";
+import Overlay from "./_components/Overlay";
 
-function Overlay({ open, onClick }: { open: boolean; onClick: () => void }) {
-  return (
-    <div
-      className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-200 ${
-        open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-      }`}
-      onClick={onClick}
-    />
-  );
-}
+import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
-export default function HeaderMobile() {
+function HeaderMobile() {
   const [open, setOpen] = useState(false);
+  useLockBodyScroll(open);
 
   return (
-    <header className="lg:hidden">
-      <div className="flex justify-between items-center p-4">
+    <>
+      <div className="flex justify-between items-center p-4 lg:hidden h-full w-full">
         <Link href={WebsiteRoutes.ROOT} className="font-semibold">
           Aurelian Spodarec
         </Link>
@@ -33,10 +27,12 @@ export default function HeaderMobile() {
         >
           Menu
         </button>
-      </div>
 
+      </div>
       <Overlay open={open} onClick={() => setOpen(false)} />
       <Drawer open={open} onClose={() => setOpen(false)} />
-    </header>
+    </>
   );
 }
+
+export default HeaderMobile

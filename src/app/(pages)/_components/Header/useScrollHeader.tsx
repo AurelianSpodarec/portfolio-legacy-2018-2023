@@ -84,7 +84,7 @@ function getStore(headerHeight: number) {
   return store;
 }
 
-export function useScrollHeader(headerHeight: number): Snapshot {
+export function useScrollHeader(headerHeight: number = 60): Snapshot {
   const store = getStore(headerHeight);
   return useSyncExternalStore(
     store.subscribe,

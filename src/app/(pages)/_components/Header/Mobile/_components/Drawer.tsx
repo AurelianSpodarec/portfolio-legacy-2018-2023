@@ -1,5 +1,5 @@
-import dataMenu from "../../dataMenu";
 import MenuLink from "./MenuLink";
+import dataMenu from "../../dataMenu";
 
 function Drawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
