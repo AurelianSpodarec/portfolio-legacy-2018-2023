@@ -65,7 +65,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section>
+      {/* <Section>
         <Container>
 
           <div className="grid grid-cols-2">
@@ -81,7 +81,7 @@ function Home() {
           </div>
 
         </Container>
-      </Section>
+      </Section> */}
 
       <Section size="lg" className="bg-[#272c31] text-white text-center text-5xl uppercase font-bold">
         <span>Awesome. Creative. Developer.</span>

@@ -9,7 +9,7 @@ function SectionAboutExcerpt() {
   return (
     <Section>
       <Container>
-        <div className="flex flex-row">
+        <div className="flex flex-col lg:flex-row">
           <div>
             <h2>About me</h2>
             <p>Helping you build a site that works the first time</p>

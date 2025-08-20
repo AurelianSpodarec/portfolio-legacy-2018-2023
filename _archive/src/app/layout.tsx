@@ -1,7 +1,7 @@
 import Header from './_components/Header'
 import Footer from './_components/Footer'
 
-import './../styles/styles.scss'
+import '../styles/styles.scss'
 
 import { Montserrat, Lato, Roboto_Slab } from 'next/font/google'
 import { Providers } from './providers'
@@ -34,11 +34,7 @@ export const metadata = {
   description: 'Aurelian Spodarec 2018 personal website',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`}>

@@ -37,7 +37,7 @@ function ExcerptItem({ title, image, link }: CTABlockProps) {
 function SectionMultiCTA() {
   return (
     <section>
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         <ExcerptItem
           title="My Services"
           image={{
