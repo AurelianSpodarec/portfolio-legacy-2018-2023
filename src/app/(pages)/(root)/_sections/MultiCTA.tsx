@@ -19,19 +19,42 @@ interface CTABlockProps {
 
 function ExcerptItem({ title, image, link }: CTABlockProps) {
   return (
-    <Link href={link.url} className="relative overflow-hidden h-full min-h-[600px] w-full group">
+    <Link href={link.url} className="group relative overflow-hidden h-full min-h-[600px] w-full focus:outline-none">
+      <div className="absolute inset-0 z-10 bg-[#262626]/90" />
 
-      <div className="absolute top-0 right-0 bottom-0 left-0 z-10 bg-[#333]/75 h-full w-full"></div>
-      <Image src={image.url} alt="" aria-hidden="true" fill className="w-full h-full object-cover transition duration-100 ease-linear group-hover:scale-105" />
+      <Image
+        src={image.url}
+        alt=""
+        aria-hidden="true"
+        fill
+        className="w-full h-full object-cover"
+      />
 
       <div className="absolute z-20 h-full w-full px-8">
         <div className="flex flex-col justify-center items-center h-full w-full">
-          <span className="text-white text-4xl font-bold uppercase">{title}</span>
-          <button type="button">View</button>
+          <span className="duration-300 text-white text-4xl font-primary font-bold uppercase group-hover:scale-105 group-focus-within:scale-105">
+            {title}
+          </span>
+
+          <div className="mb-4 relative after:content-[''] after:block after:w-12 after:border-2 after:border-[#f2a538] after:mx-auto after:transition-all after:duration-300 after:ease-in-out group-hover:after:w-[100px] group-focus-within:after:w-[100px]" />
+
+          <span
+            aria-hidden="true"
+            className="
+              border-[3px] border-[#f2a538] 
+              text-white text-md py-2.5 px-20 uppercase font-bold font-primary 
+              rounded-xs
+              transform-border transform-background duration-200
+              group-hover:py-2 group-hover:border-transparent group-hover:bg-white/20 group-hover:backdrop-blur
+              group-focus-within:py-2 group-focus-within:border-transparent group-focus-within:bg-white/20 group-focus-within:backdrop-blur
+            "
+          >
+            View
+          </span>
         </div>
       </div>
     </Link>
-  )
+  );
 }
 
 function SectionMultiCTA() {
@@ -55,7 +78,7 @@ function SectionMultiCTA() {
             alt: ""
           }}
           link={{
-            url: "/process",
+            url: "/process"
           }}
         />
         <ExcerptItem
@@ -70,7 +93,7 @@ function SectionMultiCTA() {
         />
       </div>
     </section>
-  )
+  );
 }
 
-export default SectionMultiCTA
+export default SectionMultiCTA;
