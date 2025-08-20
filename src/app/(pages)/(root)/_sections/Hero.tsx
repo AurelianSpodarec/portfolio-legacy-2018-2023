@@ -5,14 +5,14 @@ import { useParallax } from "@/hooks/useParallax";
 
 function SectionHero() {
   const bg = useParallax<HTMLDivElement>({ speed: -0.4 });
-  const fg = useParallax<HTMLDivElement>({ speed: -0.4, inheritParentTransform: true, });
+  const fg = useParallax<HTMLDivElement>({ speed: -0.2, inheritParentTransform: true, });
 
   return (
-    <section className="relative h-screen -z-10">
+    <section className="relative overflow-hidden h-screen">
       <div ref={bg.ref} className="bg-cover h-full" style={{ backgroundImage: `url('/images/blur-cafe-chairs.jpg')` }}>
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-[#0e0f10]/70"></div>
 
-        <div ref={fg.ref} className="flex items-center justify-center h-full w-full">
+        <div ref={fg.ref} className="flex items-center justify-center h-full w-full z-10">
           <div className="text-center z-10 pt-20">
 
             <h1 className="text-white text-7xl mb-2 font-semibold">Make your website your <br />best salesperson</h1>
@@ -21,11 +21,11 @@ function SectionHero() {
             <div className="flex justify-center space-x-2 pb-30">
               <button
                 className="
-                border-[3px] border-[#f2a538] bg-[#f2a538] text-black
-                 text-md py-2.5 px-8 font-bold font-primary cursor-pointer 
-                transform-border transform-background duration-200
-                rounded-xs
-                hover:border-transparent hover:bg-white/20 hover:backdrop-blur
+              border-[3px] border-[#f2a538] bg-[#f2a538] text-black
+              text-md py-2.5 px-8 font-bold font-primary cursor-pointer 
+              transform-border transform-background duration-200
+              rounded-xs
+              hover:border-transparent hover:bg-white/20 hover:backdrop-blur
                 ">
                 Start your project now
               </button>
