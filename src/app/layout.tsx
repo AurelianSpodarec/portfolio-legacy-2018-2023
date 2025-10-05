@@ -29,7 +29,7 @@ export const georgia = Noto_Serif_Georgian({
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`antialiased scrollbar ${montserrat.variable} ${georgia.variable}`}>
+      <body className={`antialiased scrollbar font-montserrat ${montserrat.variable} ${georgia.variable}`}>
         <WebHeader />
         <main>
           {children}

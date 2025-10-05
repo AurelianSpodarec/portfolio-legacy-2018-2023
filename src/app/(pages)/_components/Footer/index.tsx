@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function WebFooter() {
   return (
-    <footer className="bg-[#262626] py-6">
-      <div>
+    <footer className="bg-[#262626] py-8">
+      <div className="px-4 w-[1240px] mx-auto">
 
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <Link href="/" className="text-white text-3xl font-bold uppercase font-lato">Aurelian S</Link>
@@ -20,17 +20,17 @@ function WebFooter() {
           </div>
         </div>
 
-        <hr className="my-6" />
+        <hr className="my-6 text-[#464646]" />
 
         <div className="flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-white text-sm">&copy; Aurelian Spodarec 2018-2023. All rights reserved</p>
+          <p className="text-white text-xs">&copy; Aurelian Spodarec 2018-2023. All rights reserved</p>
 
-          <nav className="flex flex-col lg:flex-row text-white text-sm lg:space-x-7 text-center">
-            <Link href="https://www.linkedin.com/in/aurelianspodarec/">LinkedIn</Link>
-            <Link href="/faq">FAQ</Link>
-            <Link href="https://aurelianspodarec.co.uk/blog">Blog</Link>
-            <Link href="https://github.com/AurelianSpodarec">Github</Link>
-            <Link href="/contact">Contact</Link>
+          <nav className="flex flex-col lg:flex-row text-white text-sm lg:space-x-8 text-center">
+            <Link className="text-xs" href="https://www.linkedin.com/in/aurelianspodarec/">LinkedIn</Link>
+            <Link className="text-xs" href="/faq">FAQ</Link>
+            <Link className="text-xs" href="https://aurelianspodarec.co.uk/blog">Blog</Link>
+            <Link className="text-xs" href="https://github.com/AurelianSpodarec">Github</Link>
+            <Link className="text-xs" href="/contact">Contact</Link>
           </nav>
         </div>
 

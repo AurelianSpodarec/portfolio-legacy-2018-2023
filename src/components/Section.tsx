@@ -19,7 +19,7 @@ function Section({ id, className, style, children, size = "md" }: ISectionProps)
   };
 
   return (
-    <section id={id} className={`${className} ${sizes[size]} bg-white`} style={style}>
+    <section id={id} className={`${className} ${sizes[size]}`} style={style}>
       {children}
     </section>
   )
